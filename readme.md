@@ -103,3 +103,11 @@ npm run preview   # Preview production build
 - Graceful loading / error / empty states
 
 ---
+
+## Notes
+
+I understand that implementing unit testing is a plus point. Initially, I planned to implement it using Vitest, since I already have experience with both Vitest and Jest. However, due to limited time caused by a personal matter at home, I wasn’t able to complete the unit testing implementation.Despite that, I’m confident that given more time, I would be able to add proper unit tests following best practices.
+
+Regarding the system and structure design, I chose a modular architecture because I have experience building web applications from scratch. From that experience, I’ve learned how important scalability and maintainability are as a project grows. A modular approach helps keep the codebase clean, scalable, and easier to maintain in the long run, which is why I chose this design.
+
+---
