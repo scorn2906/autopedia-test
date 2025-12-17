@@ -1,11 +1,20 @@
 # Frontend Test - Reza Agung Prasetya
 
-Frontend test ini terdiri dari 2 bagian utama:
+This frontend test consists of two main parts:
 
-1. `shop-explorer/` → Aplikasi React + Vite untuk eksplorasi produk (search, filter, detail)
-2. `slicing-html/` → Hasil UI slicing statis menggunakan HTML, CSS, JavaScript, dan jQuery (tanpa framework)
+- shop-explorer/ → A React + Vite application for product exploration, including search, filtering, and product details.
 
-Disini saya menerapkan best practices frontend modern sekaligus menunjukkan kemampuan slicing UI dari desain.
+- slicing-html/ → A static UI slicing implementation using HTML, CSS, JavaScript, and jQuery (without any framework).
+
+In this project, I apply modern frontend best practices while also demonstrating my ability to perform UI slicing from a design.
+
+## Notes
+
+I understand that implementing unit testing is a plus point. Initially, I planned to implement it using Vitest, since I already have experience with both Vitest and Jest. However, due to limited time caused by a personal matter at home, I wasn’t able to complete the unit testing implementation.Despite that, I’m confident that given more time, I would be able to add proper unit tests following best practices.
+
+Regarding the system and structure design, I chose a modular architecture because I have experience building web applications from scratch. From that experience, I’ve learned how important scalability and maintainability are as a project grows. A modular approach helps keep the codebase clean, scalable, and easier to maintain in the long run, which is why I chose this design.
+
+---
 
 ## Tech Stack
 
@@ -101,13 +110,5 @@ npm run preview   # Preview production build
 - Separation of concerns
 - Reusable components
 - Graceful loading / error / empty states
-
----
-
-## Notes
-
-I understand that implementing unit testing is a plus point. Initially, I planned to implement it using Vitest, since I already have experience with both Vitest and Jest. However, due to limited time caused by a personal matter at home, I wasn’t able to complete the unit testing implementation.Despite that, I’m confident that given more time, I would be able to add proper unit tests following best practices.
-
-Regarding the system and structure design, I chose a modular architecture because I have experience building web applications from scratch. From that experience, I’ve learned how important scalability and maintainability are as a project grows. A modular approach helps keep the codebase clean, scalable, and easier to maintain in the long run, which is why I chose this design.
 
 ---
