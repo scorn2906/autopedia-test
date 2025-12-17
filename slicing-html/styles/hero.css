@@ -1,0 +1,255 @@
+.section-hero {
+  margin: 100px 0px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  /* overflow-x: hidden; */
+}
+
+.hero {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  column-gap: 24px;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  margin: 20px 0;
+  color: var(--heading-color);
+}
+
+.highlight {
+  display: inline-block;
+  padding: 0px 24px;
+  margin-left: 12px;
+  border: 8px solid var(--main-color);
+  border-radius: 16px;
+  color: var(--main-color);
+  position: relative;
+}
+
+.corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 8px solid var(--main-color);
+  background: white;
+  border-radius: 50%;
+}
+
+.top-left {
+  top: -15px;
+  left: -15px;
+}
+.top-right {
+  top: -15px;
+  right: -15px;
+}
+.bottom-left {
+  bottom: -15px;
+  left: -15px;
+}
+.bottom-right {
+  bottom: -15px;
+  right: -15px;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: var(--subtitle-color);
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-primary {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-video {
+  background: transparent;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: start;
+  max-width: 300px;
+}
+
+.btn-video > .circle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(112, 111, 229, 0.15);
+  border-radius: 50%;
+}
+
+.btn-video > .circle > div {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--main-color);
+  rotate: 90deg;
+}
+
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 8px solid var(--main-color);
+  background-color: rgba(112, 111, 229, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img.hero-img {
+  width: auto;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-bottom: 100px;
+}
+.image-wrapper img.hero-diamond,
+.image-wrapper img.hero-xd,
+.image-wrapper img.hero-figma {
+  position: absolute;
+}
+.image-wrapper img.hero-figma {
+  right: -30px;
+  top: -60px;
+}
+.image-wrapper img.hero-xd {
+  left: -30px;
+  top: -60px;
+}
+.image-wrapper img.hero-diamond {
+  left: -100px;
+  top: -100px;
+}
+
+.review-card {
+  position: absolute;
+  bottom: -20px;
+  right: 120px;
+  background: white;
+  padding: 13px 26px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.review-card strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--secondary-color);
+}
+
+.ellips-img {
+  position: absolute;
+  right: -48px;
+  top: 45px;
+}
+
+@media (max-width: 900px) {
+  .section-hero {
+    margin-top: 0px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 38px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    flex-direction: column-reverse;
+  }
+
+  .btn-video {
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .image-wrapper img.hero-img {
+    width: auto;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-bottom: 100px;
+  }
+
+  .image-wrapper img.hero-figma {
+    right: -20px;
+    top: -60px;
+  }
+  .image-wrapper img.hero-xd {
+    left: -20px;
+    top: -60px;
+  }
+  .image-wrapper img.hero-diamond {
+    left: 0px;
+    top: 50px;
+  }
+
+  .review-card {
+    position: absolute;
+    bottom: -20px;
+    right: 100px;
+    background: white;
+    padding: 13px 26px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}

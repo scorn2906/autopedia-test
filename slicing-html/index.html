@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./style.css" /></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./assets/logo.svg" loading="lazy" />
+          </div>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-left">
+              <h1>
+                We Design Impactful Digital
+                <span class="highlight"
+                  >Products
+                  <span class="corner top-left"></span>
+                  <span class="corner top-right"></span>
+                  <span class="corner bottom-left"></span>
+                  <span class="corner bottom-right"></span>
+                </span>
+              </h1>
+
+              <p>
+                Help find solutions with intuitive and in accordance with client
+                business goals. We provide high-quality services.
+              </p>
+
+              <div class="hero-actions">
+                <button class="btn-primary">Contact Us</button>
+                <button class="btn-video">
+                  <div class="circle">
+                    <div></div>
+                  </div>
+                  Watch our introduction video
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-right">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/hero-img.svg"
+                  class="hero-img"
+                  alt="Woman"
+                  loading="lazy"
+                />
+                <img
+                  src="./assets/figma.png"
+                  class="hero-figma"
+                  loading="lazy"
+                  alt="figma-logo"
+                />
+                <img
+                  src="./assets/xd.png"
+                  class="hero-xd"
+                  loading="lazy"
+                  alt="figma-logo"
+                />
+                <img
+                  src="./assets/diamond.png"
+                  class="hero-diamond"
+                  loading="lazy"
+                  alt="figma-logo"
+                />
+              </div>
+
+              <div class="review-card">
+                <strong>120+ Employees</strong>
+                <div class="stars">
+                  <img src="./assets/star.svg" loading="lazy" />5.0 (3.1K
+                  Reviews)
+                </div>
+                <img
+                  class="ellips-img"
+                  src="./assets/ellips.svg"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-trusted">
+        <div class="container">
+          <div class="trusted">
+            <h2>Trusted by greatest companies</h2>
+            <div class="list-trusted"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-products">
+        <div class="container">
+          <h1>We Create World‑Class Digital Products</h1>
+          <p class="subtitle">
+            By information about design the world to the best instructors, heatc
+            helping by information
+          </p>
+
+          <div class="grid"></div>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="container">
+          <div class="testimonial">
+            <div class="dots left"></div>
+            <div class="dots right"></div>
+
+            <h2>Let's Hear<br />What They Says</h2>
+
+            <p class="quote" id="quoteText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel
+              lobortis tincidunt fames quisque mauris at diam. Nullam morbi
+              ipsum turpis amet id posuere tortor quis nostrud exercitation
+              ullamco laboris nisi ut aliquip.
+            </p>
+
+            <div class="avatars">
+              <div class="avatar">
+                <img src="./assets/testimoni/user-1.png" loading="lazy" />
+              </div>
+              <div class="avatar">
+                <img src="./assets/testimoni/user-2.png" loading="lazy" />
+              </div>
+              <div class="avatar active">
+                <img src="./assets/testimoni/active-user.png" loading="lazy" />
+              </div>
+              <div class="avatar">
+                <img src="./assets/testimoni/user-4.png" loading="lazy" />
+              </div>
+              <div class="avatar">
+                <img src="./assets/testimoni/user-5.png" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="author" id="authorName">Ricky Aprilia</div>
+            <div class="role" id="authorRole">Founder of Varibo</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-help">
+        <div class="container">
+          <div class="help">
+            <div>
+              <h2>How We Can Help You</h2>
+              <p>
+                Follow our newsletter. We will regulary update our latest
+                project and availability.
+              </p>
+              <div class="subscribe">
+                <input type="email" placeholder="Enter your email address" />
+                <button id="subscribeBtn">Subscribe</button>
+              </div>
+            </div>
+
+            <div class="services"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="logo">
+            <img src="./assets/logo-white.svg" loading="lazy" />
+          </div>
+          <div class="socials">
+            <div>
+              <img src="./assets/media/instagram.png" loading="lazy" />
+            </div>
+            <div>
+              <img src="./assets/media/facebook.png" loading="lazy" />
+            </div>
+            <div>
+              <img src="./assets/media/github.png" loading="lazy" />
+            </div>
+            <div>
+              <img src="./assets/media/twitter.png" loading="lazy" />
+            </div>
+            <div>
+              <img src="./assets/media/instagram.png" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-mid">
+          <div class="links">
+            <span>About Us</span><span>Press</span><span>Investors</span
+            ><span>Events</span><span>Terms of use</span
+            ><span>Privacy policy</span>
+          </div>
+          <button class="contact">Contact Us</button>
+        </div>
+
+        <div class="footer-bottom">© power 2021 – All Rights Reserved</div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
