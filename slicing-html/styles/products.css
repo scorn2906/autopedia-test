@@ -1,3 +1,6 @@
+.section-products {
+  padding: 40px 0px;
+}
 .section-products h1 {
   color: var(--heading-color);
 }
@@ -9,12 +12,11 @@
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 30px;
+  gap: 20px;
 }
 
 .card {
   border-radius: 20px;
-  padding: 20px;
 }
 .card img {
   width: 100%;
@@ -43,9 +45,6 @@
 }
 
 @media (max-width: 900px) {
-  .section-products {
-    padding: 40px 0px;
-  }
   .section-products h1,
   .section-products p {
     text-align: center;
